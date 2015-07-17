@@ -19,14 +19,9 @@ namespace Daily_Programmer._223_EelOfFortune
 
         public bool Problem(string targetWord, string badWord)
         {
-            var lib = badWord.ToCharArray().Distinct();
-            var reveal = new string(
-                    targetWord.ToCharArray()
-                    .Where(c => lib.Contains(c))
-                    .ToArray()
-                );
-
-            return reveal == badWord;
+            return new string(
+                targetWord.ToCharArray().Where(c => badWord.Contains(c)).ToArray()
+                ) == badWord;
         }
     }
 }
