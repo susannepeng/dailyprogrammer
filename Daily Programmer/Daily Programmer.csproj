@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="221_WordSnake\WordSnake.cs" />
     <Compile Include="223_EelOfFortune\EelOfFortune.cs" />
+    <Compile Include="224_DetectingFourSidedFigures\DetectingFourSidedFigures.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
